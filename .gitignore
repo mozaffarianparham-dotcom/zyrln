@@ -1,0 +1,55 @@
+# Local config with secrets — never commit
+config.env
+
+# Local CA certs and private keys — never commit
+certs/
+*.key
+*.pem
+
+# Test reports
+reports/
+*.log
+tools/utls-frag-probe/
+
+# Go build outputs
+/dpi
+/zyrln
+/desktop
+/mhr-vps-relay
+/dist/
+
+# Android signing — never commit
+android/local.properties
+android/*.jks
+android/keystore.properties
+
+# Android build artifacts — run `make aar` to regenerate
+android/app/libs/*.aar
+android/app/libs/*.jar
+android/app/build/
+android/.gradle/
+android/build/
+
+# Editor / OS noise
+.DS_Store
+*.swp
+.idea/
+*.iml
+
+# Internal files
+CLAUDE.md
+.claude/
+TODO.md
+.codex
+.agents
+*.apk
+*.exe
+zyrln-linux-amd64
+docs/node_modules/
+docs/.vitepress/cache/
+config.env.profiles.json
+zyrln-*
+!zyrln-logo.png
+!platforms/desktop/gui/zyrln-icon.png
+coverage.out
+direct_candidate.txt
